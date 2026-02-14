@@ -21,4 +21,4 @@ Thumbs.db
 # temp
 tmp/dist/
 
-*.tgz
+*.tgz.DS_Store
