@@ -1,19 +1,30 @@
 {
   "name": "openplugdj",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A lightweight DJ queue and room engine inspired by plug.dj",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "exports": {
     ".": "./dist/index.js"
   },
-  "files": ["dist", "README.md", "LICENSE", "package.json"],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "package.json"
+  ],
   "scripts": {
     "build": "tsc",
     "dev": "tsc -w",
     "prepublishOnly": "npm run build"
   },
-  "keywords": ["dj", "queue", "music", "room", "realtime"],
+  "keywords": [
+    "dj",
+    "queue",
+    "music",
+    "room",
+    "realtime"
+  ],
   "author": "bulondra",
   "license": "MIT",
   "dependencies": {
