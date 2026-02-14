@@ -23,5 +23,13 @@
     "@types/node": "^25.2.3",
     "typescript": "^5.5.3"
   },
-  "private": false
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bulondra/openplugdj.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bulondra/openplugdj/issues"
+  },
+  "homepage": "https://github.com/bulondra/openplugdj#readme"
 }
