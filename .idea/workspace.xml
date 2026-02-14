@@ -5,26 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ef07a57-ea63-4528-b6ee-67edd5fec137" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.npmignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/adapters/MemoryStore.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/adapters/RedisStore.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/adapters/Store.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/DJ.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/Player.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/Queue.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/Room.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/events/EventTypes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/DJEntry.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Track.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/User.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/MetadataService.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/StreamService.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/VoteService.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/time.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,9 +22,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="39fgD6JjcmuOXlwDJ9ev0R3bMyr" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -57,8 +38,9 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "javascript.preferred.runtime.type.id": "node",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -83,7 +65,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1771092420721</updated>
-      <workItem from="1771092421757" duration="1679000" />
+      <workItem from="1771092421757" duration="2131000" />
+      <workItem from="1771094937658" duration="158000" />
     </task>
     <servers />
   </component>
