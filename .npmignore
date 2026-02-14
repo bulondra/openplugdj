@@ -1,0 +1,27 @@
+# Development files
+tests/
+spec/
+**/__tests__
+.github/
+.vscode/
+.idea/
+
+# Config files
+.eslintrc.json
+.prettierrc
+.babelrc
+jest.config.js
+tsconfig.json
+
+# Documentation source
+docs/
+examples/
+screenshots/
+
+# Logs and system files
+*.log
+.DS_Store
+thumbs.db
+
+# Build source (if you are shipping a transpiled /dist folder)
+src/
