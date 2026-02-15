@@ -22,6 +22,7 @@ export class Room extends EventEmitter {
         this.player.on("trackEnd", t => this.emit("trackEnd", t));
         this.player.on("voteUpdated", v => this.emit("voteUpdated", v));
         this.player.on("queueEmpty", () => this.emit("queueEmpty"));
+        this.player.on("error", e => this.emit("error", e));
     }
 
     addUser(user: User) {
@@ -37,11 +38,22 @@ export class Room extends EventEmitter {
     }
 
     addEntry(entry: DJEntry) {
-        this.queue.add(entry);
-        this.emit("queueUpdated", this.queue.getAll());
+        try {
+            this.queue.add(entry);
+            this.emit("queueUpdated", this.queue.getAll());
+        } catch (error) {
+            this.emit("error", {
+                type: "storage",
+                error: error instanceof Error ? error : new Error(String(error))
+            });
+        }
     }
 
     start() {
         this.player.playNext();
+    }
+    
+    getUsers() {
+        return Array.from(this.users.values());
     }
 }

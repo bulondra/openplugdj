@@ -16,6 +16,17 @@ export class Queue {
     }
 
     reorder(from: number, to: number) {
+        // Validate bounds
+        if (from < 0 || from >= this.entries.length) {
+            throw new Error(`Invalid 'from' index: ${from}. Queue length: ${this.entries.length}`);
+        }
+        if (to < 0 || to >= this.entries.length) {
+            throw new Error(`Invalid 'to' index: ${to}. Queue length: ${this.entries.length}`);
+        }
+        if (from === to) {
+            return; // No-op
+        }
+
         const [item] = this.entries.splice(from, 1);
         this.entries.splice(to, 0, item);
     }

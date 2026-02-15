@@ -1,6 +1,6 @@
 {
   "name": "openplugdj",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A lightweight DJ queue and room engine inspired by plug.dj",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

@@ -10,7 +10,13 @@ export interface RoomEvents {
     trackEnd: (track: Track) => void;
 
     queueUpdated: (entries: DJEntry[]) => void;
-    voteUpdated: (votes: { up: number; down: number }) => void;
+    voteUpdated: (votes: { up: number; down: number; total: number }) => void;
 
     queueEmpty: () => void;
+    
+    error: (error: {
+        type: "stream" | "vote" | "skip" | "metadata" | "storage";
+        error: Error;
+        track?: Track;
+    }) => void;
 }

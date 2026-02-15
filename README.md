@@ -315,3 +315,23 @@ MIT © [bulondra](https://github.com/bulondra)
 ## Support
 
 If you find this project helpful, please consider giving it a ⭐ on GitHub!
+
+### Error Handling
+
+All errors are emitted via the `error` event:
+
+```typescript
+room.on("error", (error) => {
+  console.error(`[${error.type}]:`, error.error.message);
+  
+  if (error.track) {
+    console.error(`Track: ${error.track.title}`);
+  }
+  
+  // Error types:
+  // - "stream": Audio streaming failed
+  // - "vote": Voting failed
+  // - "skip": Skip operation failed
+  // - "metadata": Metadata fetching failed
+  // - "storage": Storage operation failed
+});
